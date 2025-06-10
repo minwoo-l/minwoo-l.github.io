@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | UWM StudyRadar</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+
+    <header class="page-header">
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+    </header>
+
+    <main class="case-study-content">
+        
+        <h1 class="project-detail-title">UWM StudyRadar</h1>
+        <p class="project-detail-subtitle">
+            A deep dive into the capstone project creating a university-exclusive platform for students to form study groups.
+        </p>
+
+        <div class="video-container">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/7ite2cf15KE?si=6uiICzoydFxqXrJ3" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+
+        <section class="project-section">
+            <h2>Project Overview</h2>
+            <p>
+                UWM StudyRadar was our team's capstone project, developed to address a critical need for students at the University of Wisconsin-Milwaukee. While general platforms exist, they lack the specificity required for course-related discussions, and university-provided tools like Piazza see inconsistent adoption. This leaves students without a reliable, centralized place to connect and collaborate on their studies.
+            </p>
+            <p>
+                Our team developed StudyRadar to fill this gap, creating a UWM-exclusive hub where students can easily form and find study groups for specific courses, exams, and assignments, as well as for shared hobbies and interests. The platform was built using a modern tech stack, featuring a <strong>Django</strong> backend with a REST API and a dynamic <strong>React</strong> frontend, all supported by an <strong>AWS RDS</strong> database.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Key Features</h2>
+            <ul>
+                <li>
+                    <strong>Secure User Authentication:</strong> A complete registration and login system protected by JSON Web Tokens (JWT). Features robust server-side validation for all user inputs, including unique usernames, password strength requirements, and valid email formats to ensure data integrity and account security.
+                </li>
+                <li>
+                    <strong>Dynamic Group Management:</strong> Users can create new study groups with auto-generated join codes, making them the group's creator. The platform also provides a central dashboard to view joined groups, browse recommended groups, and seamlessly join or leave them.
+                </li>
+                <li>
+                    <strong>Integrated Event System:</strong> Within each group, members have full CRUD (Create, Read, Update, Delete) functionality for events like study sessions or exam reviews. To keep users informed, the main dashboard prominently displays up to five upcoming events from all their joined groups.
+                </li>
+                <li>
+                    <strong>Powerful Search & Discovery:</strong> A comprehensive search bar allows users to find public groups by name, keyword, or course code. To encourage engagement, the system also intelligently recommends other relevant groups that a user has not yet joined.
+                </li>
+                <li>
+                    <strong>User Profile Customization:</strong> A dedicated profile page where students can view and update their personal information, including their major, graduation year, and contact details, with the same validation rules applied during sign-up.
+                </li>
+            </ul>
+        </section>
+
+        <section class="project-section">
+            <h2>My Role & Contributions</h2>
+            <p>
+                As a key full-stack developer on the UWM StudyRadar project, I made significant contributions across the entire technology stack. I was responsible for designing and deploying the cloud infrastructure, engineering a wide range of backend features, and developing key parts of the user interface to create a cohesive final product.
+            </p>
+            <ul>
+                <li>
+                    <strong>Database & Cloud Infrastructure:</strong> I architected and deployed the project's database using Amazon Web Services (AWS) RDS, providing a centralized and scalable data solution for the entire team to work with concurrently.
+                </li>
+                <li>
+                    <strong>Backend Engineering:</strong> I engineered the logic for a majority of the backend, including secure user creation, profile management, event handling, group detail display, and the core search functionality that allowed users to find groups.
+                </li>
+                <li>
+                    <strong>Group Recommendation Engine:</strong> I developed the specific algorithm and backend logic for the group recommendation system, which intelligently suggests new groups to users to enhance engagement.
+                </li>
+                <li>
+                    <strong>Frontend Development & UI:</strong> I directly built key parts of the user interface, including implementing the main navigation menu for the website. I also made numerous UI improvements across the application and assisted teammates with frontend tasks to enhance the overall user experience.
+                </li>
+                <li>
+                    <strong>Technical Leadership & Integration:</strong> I frequently provided hands-on technical support and mentorship to teammates, leading troubleshooting efforts to resolve complex frontend-backend integration challenges and ensure the project moved forward efficiently.
+                </li>
+            </ul>
+        </section>
+        
+        <section class="project-section tech-and-links">
+            <h2>Technology & Links</h2>
+            <div class="project-tech-stack">
+                <div class="tech"><i class="devicon-django-plain"></i><span>Django</span></div>
+                <div class="tech"><i class="devicon-react-original"></i><span>React</span></div>
+                <div class="tech"><i class="devicon-amazonwebservices-original"></i><span>AWS</span></div>
+                <div class="tech"><i class="devicon-mysql-plain"></i><span>MySQL</span></div>
+            </div>
+            <div class="project-buttons">
+                <a href="https://www.youtube.com/watch?v=T9PdiVQHJK8" class="button button-primary" target="_blank" rel="noopener noreferrer">Short Demo</a>
+                <a href="https://github.com/wolfgang-str/StudyRadar" class="button button-secondary" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+        <a href="index.html" class="back-link">← Back to Portfolio</a>
+        <p class="footer-copyright">&copy; 2025 Minwoo Lee</p> 
+    </footer>
+
+</body>
+</html>
