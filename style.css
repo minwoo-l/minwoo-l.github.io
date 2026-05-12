@@ -172,6 +172,12 @@ body {
     margin-bottom: 40px;
 }
 
+.project-detail-image-mobile {
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .project-content {
     padding: 20px;
     display: flex;
