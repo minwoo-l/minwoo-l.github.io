@@ -8,7 +8,7 @@ body {
 /* --- Hero Section Styling --- */
 .hero {
     background-color: #ffffff; /* White background for the hero section */
-    height: 100vh; /* Make the hero section take the full height of the viewport */
+    min-height: 72vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,9 +107,19 @@ body {
 
 
 /* --- Projects Section Styling --- */
+.experience-section,
 .projects-section {
     padding: 60px 20px;
     background-color: #f4f4f4; /* Light grey to separate from the hero section */
+}
+
+.experience-section {
+    background-color: #ffffff;
+    padding-bottom: 80px;
+}
+
+.projects-section {
+    padding-top: 80px;
 }
 
 .section-title {
@@ -118,6 +128,60 @@ body {
     font-size: 2.5rem;
     color: #2c3e50; /* Deep blue, same as hero name */
     margin-bottom: 50px;
+}
+
+.experience-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.experience-item {
+    border-left: 4px solid #3498db;
+    padding: 0 0 0 22px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.experience-role {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin: 0 0 6px 0;
+}
+
+.experience-company {
+    font-weight: 500;
+    color: #3498db;
+    margin: 0;
+}
+
+.experience-date,
+.experience-location {
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+.experience-date {
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.experience-location {
+    margin: 8px 0 10px 0;
+}
+
+.experience-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* --- Projects Grid Layout --- */
@@ -234,6 +298,11 @@ body {
 
 /* --- Responsive Design for Mobile --- */
 @media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .project-card {
         width: 100%; /* Make cards take full width on smaller screens */
         max-width: 350px; /* But not wider than our original design */
